@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Home</title>
+</head>
+<body>
+	<h1>Project Solution</h1>
+	<h2><i>The Virus Detector</i></h2>
+	<h2>Please upload a <i>"File"</i> for the <i>"Scan"</i></h2>
+
+	<form action="fileprocess" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input type="file" name="file"/>
+		<input type="submit" name="Submit">
+	</form>
+
+	<h4>Discription of project :</h4>
+	<p>The following project helps us to check whether a file is malicious or not.</p>
+
+
+
+</body>
+</html>
